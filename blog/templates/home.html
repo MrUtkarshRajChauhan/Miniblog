@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+
+<body>
+
+    <h1>New Advance Technologies</h1>
+
+    <div class="blog-container">
+
+        <div class="blog-post">
+            <img src="{% static 'blog/genai.jpg' %}" alt="Gen AI">
+            <h2>Gen-AI</h2>
+            <p>
+                Generative AI is a type of artificial intelligence that creates new content like text, images, code, or music by learning patterns from existing data.
+                Instead of just analyzing information, it actually generates original outputs based on what it has learned.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <img src="{% static 'blog/blockchain.jpg' %}" alt="Blockchain">
+            <h2>Block-Chain</h2>
+            <p>
+                Blockchain is a decentralized digital ledger that records transactions across many computers so no single entity controls it.
+                Once data is added to a block and confirmed, it becomes nearly impossible to change, making the system transparent and secure.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <img src="{% static 'blog/cryptop.jpg' %}" alt="Cryptocurrency">
+            <h2>Cryptocurrency</h2>
+            <p>
+                Cryptocurrency is a digital currency that uses cryptography and runs on blockchain technology instead of being controlled by a bank or government.
+                Transactions are verified by a decentralized network, making them transparent, secure, and borderless.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
